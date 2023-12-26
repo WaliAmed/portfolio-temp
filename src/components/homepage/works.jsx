@@ -1,6 +1,6 @@
 import React from "react";
 import { faBriefcase } from "@fortawesome/free-solid-svg-icons";
-
+import QisstPayLogo from "../../assets/images/qisstpay_logo.png";
 import Card from "../common/card";
 
 import "./styles/works.css";
@@ -35,7 +35,7 @@ const Works = () => {
 
 						<div className="work">
 							<img
-								src="https://scontent.fisb5-2.fna.fbcdn.net/v/t39.30808-6/326748799_885658049418344_2255245390618021987_n.png?_nc_cat=105&ccb=1-7&_nc_sid=efb6e6&_nc_eui2=AeGXXovt8QgradDkekoQjVeawRY4yGBmb1PBFjjIYGZvU3BfEe-A0Ff2hs4i0ubKgl_oQxK6-5yFX4TMH59NJEgw&_nc_ohc=4fwp9p6Nf8QAX9lmnZM&_nc_ht=scontent.fisb5-2.fna&oh=00_AfCXBvmLw_ZAEIO6XoqdpIhpE8Q07-q-ud9FLfPzyAIRmw&oe=658A18C9"
+								src={QisstPayLogo}
 								alt="QisstPay"
 								className="work-image"
 							/>

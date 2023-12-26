@@ -33,10 +33,45 @@ const INFO = {
 
 	projects: [
 		{
+			title: "Semantic Graph",
+			description:
+				"A React JS and Node JS-powered e-commerce web app, designed with React Styled Components, offering inventory management for the store and a user-friendly purchase history dashboard.",
+			logos: [
+				{
+					image: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/512px-React-icon.svg.png",
+					title: "React",
+				},
+				{
+					image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/2560px-Node.js_logo.svg.png",
+					title: "Node.js",
+				},
+				{
+					image: "https://react-d3-library.github.io/static/react-d3-library-logo_720.png",
+					title: "React d3 graph",
+				},
+				{
+					image: "https://seeklogo.com/images/R/react-query-logo-1340EA4CE9-seeklogo.com.png",
+					title: "React Query",
+				},
+			],
+			linkText: "View Project",
+			demoLink: "https://semantic-graph-frontend.vercel.app/",
+			link: "https://github.com/WaliAmed/semantic-graph",
+		},
+		{
 			title: "Energy Tubs",
 			description:
 				"A React JS and Node JS-powered e-commerce web app, designed with React Styled Components, offering inventory management for the store and a user-friendly purchase history dashboard.",
-			logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/512px-React-icon.svg.png",
+			logos: [
+				{
+					image: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/512px-React-icon.svg.png",
+					title: "React",
+				},
+				{
+					image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/2560px-Node.js_logo.svg.png",
+					title: "Node.js",
+				},
+			],
 			linkText: "View Project",
 			link: "https://energytubs.com/",
 		},
@@ -44,7 +79,20 @@ const INFO = {
 			title: "Similarity Api",
 			description:
 				"Easily determine text similarity. With the Text Similarity API, you can easily determine the similarity between two pieces of text with a free API key.",
-			logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/2048px-Typescript_logo_2020.svg.png",
+			logos: [
+				{
+					image: "https://static-00.iconduck.com/assets.00/nextjs-icon-2048x1234-pqycciiu.png",
+					title: "Next Js",
+				},
+				{
+					image: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/2048px-Typescript_logo_2020.svg.png",
+					title: "Type Script",
+				},
+				{
+					image: "https://seeklogo.com/images/R/react-query-logo-1340EA4CE9-seeklogo.com.png",
+					title: "React Query",
+				},
+			],
 			linkText: "View Project",
 			link: "https://github.com/WaliAmed/similarity-api",
 		},
@@ -52,7 +100,16 @@ const INFO = {
 			title: "Digitalytics",
 			description:
 				"An impeccably responsive services company website crafted with React JS and React Bootstrap, seamlessly integrating Node JS for efficient email handling.",
-			logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLAfkRRnU5vmZJvedYJP3bqZ4ydbM9rh3mnLQjswjCVA&s",
+			logos: [
+				{
+					image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLAfkRRnU5vmZJvedYJP3bqZ4ydbM9rh3mnLQjswjCVA&s",
+					title: "React + React Bootstrap",
+				},
+				{
+					image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/2560px-Node.js_logo.svg.png",
+					title: "Node Js",
+				},
+			],
 			linkText: "View Project",
 			link: "https://digitalytics.us/",
 		},
@@ -60,7 +117,16 @@ const INFO = {
 			title: "Virtual Talent",
 			description:
 				"A fully responsive business website developed using React JS with React Bootstrap, incorporating seamless email handling through Node JS.",
-			logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/512px-Bootstrap_logo.svg.png",
+			logos: [
+				{
+					image: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/512px-Bootstrap_logo.svg.png",
+					title: "React + React Bootstrap",
+				},
+				{
+					image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/2560px-Node.js_logo.svg.png",
+					title: "Node Js",
+				},
+			],
 			linkText: "View Project",
 			link: "https://www.virtual-talent.co/",
 		},

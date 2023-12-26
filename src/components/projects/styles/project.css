@@ -22,16 +22,31 @@
 	transition: color 0.3s ease-in-out;
 }
 
+.project:hover .demo-link {
+	color: #e2b205;
+	transition: color 0.3s ease-in-out;
+}
+
 .project-container {
 	padding: 30px;
 }
 
 .project-logo {
 	width: 30px;
+	display: flex;
+	align-items: center;
 }
 
 .project-logo img {
 	width: 100%;
+}
+
+.logo-container {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	width: 100%;
+	flex-wrap: wrap;
 }
 
 .project-title {
@@ -67,12 +82,30 @@
 }
 
 .project-link-text {
-	padding-left: 20px;
+	padding-left: 10px;
 	font-weight: 700;
+}
+
+.link-holder {
+	display: flex;
+	align-items: center;
+	gap: 15px;
 }
 
 @media (max-width: 600px) {
 	.project {
 		height: 300px;
+	}
+
+	.link-holder {
+		display: block;
+	}
+
+	.demo-link {
+		padding-top: 8px;
+	}
+
+	.project-link-icon {
+		padding-left: 0px;
 	}
 }
