@@ -19,6 +19,7 @@ function article_1() {
 			"Modern Web Development",
 			"Vercel",
 		],
+		image: "https://www.websitepulse.com/blog/uploads/server-side-rendering.png",
 		body: (
 			<React.Fragment>
 				<Container maxWidth="lg">
@@ -335,6 +336,7 @@ function article_2() {
 			"React Components",
 			"Webpack",
 		],
+		image: "https://bairesdev.mo.cloudinary.net/blog/2023/08/What-Is-JavaScript-Used-For.jpg?tx=w_1080,q_auto",
 		body: (
 			<React.Fragment>
 				<Container maxWidth="lg">

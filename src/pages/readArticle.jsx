@@ -40,6 +40,22 @@ const ReadArticle = () => {
 				<title>{`${article().title} | ${INFO.main.title}`}</title>
 				<meta name="description" content={article().description} />
 				<meta name="keywords" content={article().keywords.join(", ")} />
+
+				{/* Open Graph meta tags */}
+				<meta property="og:title" content={article().title} />
+				<meta
+					property="og:description"
+					content={article().description}
+				/>
+				<meta property="og:image" content={article().image} />
+				<meta
+					property="og:url"
+					content={`https://wali-dev.vercel.app/article/${slug
+						.toLowerCase()
+						.replace(/:/g, "")
+						.replace(/ /g, "_")}`}
+				/>
+				<meta property="og:type" content="article" />
 			</Helmet>
 
 			<div className="page-content">
