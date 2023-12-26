@@ -22,6 +22,7 @@ import { allArticles } from "../data/articles";
 
 import "./styles/homepage.css";
 import Skills from "../components/homepage/skills";
+import { Button } from "@mui/material";
 
 const Homepage = () => {
 	const [logoSize, setLogoSize] = useState(80);
@@ -66,6 +67,12 @@ const Homepage = () => {
 		boxShadow: stayLogo ? "none" : "none",
 	};
 
+	const redirectToGoogleDrive = () => {
+		window.open(
+			"https://drive.google.com/file/d/1BwUe9qFbrMjGUkhc-wQoIAz63vSmEXDx/view?usp=sharing"
+		);
+	};
+
 	return (
 		<React.Fragment>
 			<Helmet>
@@ -99,6 +106,15 @@ const Homepage = () => {
 
 								<div className="subtitle homepage-subtitle">
 									{INFO.homepage.description}
+
+									<Button
+										className="resume-button"
+										variant="outlined"
+										size="large"
+										onClick={redirectToGoogleDrive}
+									>
+										My Resume
+									</Button>
 								</div>
 							</div>
 

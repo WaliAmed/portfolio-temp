@@ -38,7 +38,7 @@ const Project = (props) => {
 						{description}
 					</div>
 					<div className="link-holder">
-						<Link to={link}>
+						<Link to={link} target="_black">
 							<div className="project-link">
 								<div className="project-link-icon">
 									<FontAwesomeIcon icon={faLink} />
@@ -51,7 +51,7 @@ const Project = (props) => {
 						</Link>
 
 						{demoLink && (
-							<Link to={demoLink}>
+							<Link to={demoLink} target="_black">
 								<div className="project-link demo-link">
 									<div className="project-link-icon">
 										<FontAwesomeIcon icon={faLink} />
