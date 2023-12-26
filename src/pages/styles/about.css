@@ -9,8 +9,6 @@
 	position: fixed;
 	border: 1px solid white;
 	border-radius: 50%;
-	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-	top: 4vh;
 }
 
 .about-container {
@@ -71,7 +69,11 @@
 
 @media (max-width: 1024px) {
 	.about-logo {
-		z-index: 100;
+		z-index: 9999999;
+	}
+
+	.about-logo a img {
+		width: 40px;
 	}
 
 	.about-main {

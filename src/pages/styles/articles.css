@@ -9,8 +9,7 @@
 	position: fixed;
 	border: 1px solid white;
 	border-radius: 50%;
-	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-	top: 4vh;
+	z-index: 999;
 }
 
 .articles-main-container {
@@ -44,6 +43,10 @@
 @media (max-width: 1024px) {
 	.articles-title {
 		width: 100% !important;
+	}
+
+	.articles-logo a img {
+		width: 40px;
 	}
 
 	.articles-subtitle {
