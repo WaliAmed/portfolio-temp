@@ -18,7 +18,7 @@ import AllProjects from "../components/projects/allProjects";
 
 import INFO from "../data/user";
 import SEO from "../data/seo";
-import myArticles from "../data/articles";
+import { allArticles } from "../data/articles";
 
 import "./styles/homepage.css";
 import Skills from "../components/homepage/skills";
@@ -172,17 +172,23 @@ const Homepage = () => {
 						<div className="homepage-after-title">
 							{/*Articles*/}
 							<div className="homepage-articles">
-								{myArticles.map((article, index) => (
+								{allArticles.map((article, index) => (
 									<div
 										className="homepage-article"
-										key={(index + 1).toString()}
+										key={article().title}
 									>
 										<Article
-											key={(index + 1).toString()}
+											key={article().title + index}
 											date={article().date}
 											title={article().title}
 											description={article().description}
-											link={"/article/" + (index + 1)}
+											link={
+												"/article/" +
+												article()
+													.title.toLowerCase()
+													.replace(/:/g, "")
+													.replace(/ /g, "_")
+											}
 										/>
 									</div>
 								))}

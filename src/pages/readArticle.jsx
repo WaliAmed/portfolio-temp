@@ -11,22 +11,28 @@ import INFO from "../data/user";
 import myArticles from "../data/articles";
 
 import "./styles/readArticle.css";
-
-let ArticleStyle = styled.div``;
+import { Box, Container, Typography } from "@mui/material";
 
 const ReadArticle = () => {
 	const navigate = useNavigate();
 	let { slug } = useParams();
 
-	const article = myArticles[slug - 1];
-
+	const article = myArticles(slug);
 	useEffect(() => {
 		window.scrollTo(0, 0);
 	}, [article]);
 
-	ArticleStyle = styled.div`
-		${article().style}
-	`;
+	if (article() === null) {
+		return (
+			<Container maxWidth="sm">
+				<Box mt={8}>
+					<Typography variant="h4" align="center">
+						Oops! The article you are looking for is not found.
+					</Typography>
+				</Box>
+			</Container>
+		);
+	}
 
 	return (
 		<React.Fragment>
@@ -68,7 +74,7 @@ const ReadArticle = () => {
 							</div>
 
 							<div className="read-article-body">
-								<ArticleStyle>{article().body}</ArticleStyle>
+								{article().body}
 							</div>
 						</div>
 					</div>

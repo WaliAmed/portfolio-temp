@@ -10,7 +10,7 @@ const Project = (props) => {
 
 	return (
 		<React.Fragment>
-			<div className="project">
+			<div className="project" key={title}>
 				<div className="project-container">
 					<div className="logo-container">
 						{logos.map((logo, index) => (

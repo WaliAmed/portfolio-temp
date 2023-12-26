@@ -8,7 +8,7 @@ import Article from "../components/articles/article";
 
 import INFO from "../data/user";
 import SEO from "../data/seo";
-import myArticles from "../data/articles";
+import { allArticles } from "../data/articles";
 
 import "./styles/articles.css";
 
@@ -53,7 +53,7 @@ const Articles = () => {
 
 						<div className="articles-container">
 							<div className="articles-wrapper">
-								{myArticles.map((article, index) => (
+								{allArticles.map((article, index) => (
 									<div
 										className="articles-article"
 										key={(index + 1).toString()}
@@ -63,7 +63,13 @@ const Articles = () => {
 											date={article().date}
 											title={article().title}
 											description={article().description}
-											link={"/article/" + (index + 1)}
+											link={
+												"/article/" +
+												article()
+													.title.toLowerCase()
+													.replace(/:/g, "")
+													.replace(/ /g, "_")
+											}
 										/>
 									</div>
 								))}

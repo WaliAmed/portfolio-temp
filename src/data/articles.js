@@ -386,6 +386,17 @@ function article_2() {
 	};
 }
 
-const myArticles = [article_1, article_2];
+export const allArticles = [article_1, article_2];
+const myArticles = (title) => {
+	const filteredArticle = allArticles.find(
+		(article) =>
+			article()
+				.title.toLowerCase()
+				.replace(/:/g, "")
+				.replace(/ /g, "_") === title
+	);
+
+	return filteredArticle || (() => null);
+};
 
 export default myArticles;
