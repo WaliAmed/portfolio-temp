@@ -26,16 +26,16 @@ const INFO = {
 	},
 
 	articles: {
-		title: "I'm passionate about pushing the boundaries of what's possible and inspiring the next generation of innovators.",
+		title: "Insights & Perspectives: Navigating the Depths of Knowledge and Creativity",
 		description:
-			"Chronological collection of my long-form thoughts on programming, leadership, product design, and more.",
+			"My compendium of detailed insights on programming, leadership, product design, and assorted topics, organized chronologically.",
 	},
 
 	projects: [
 		{
 			title: "Semantic Graph",
 			description:
-				"A React JS and Node JS-powered e-commerce web app, designed with React Styled Components, offering inventory management for the store and a user-friendly purchase history dashboard.",
+				"A React JS and React-d3 semantic graph representation web app, designed with Tailwind Css, offering an animated visualization of semantic graphs with Nodes and Edges.",
 			logos: [
 				{
 					image: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/512px-React-icon.svg.png",

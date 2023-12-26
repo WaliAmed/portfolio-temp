@@ -40,7 +40,10 @@ const Articles = () => {
 					</div>
 
 					<div className="articles-main-container">
-						<div className="title articles-title">
+						<div
+							className="title articles-title"
+							style={{ width: "99%" }}
+						>
 							{INFO.articles.title}
 						</div>
 
