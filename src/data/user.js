@@ -33,9 +33,9 @@ const INFO = {
 
 	projects: [
 		{
-			title: "Semantic Graph",
+			title: "Semantic Graph - PageRank Demonstration",
 			description:
-				"A React JS and React-d3 semantic graph representation web app, designed with Tailwind Css, offering an animated visualization of semantic graphs with Nodes and Edges.",
+				"A React JS and React-d3 semantic graph representation web app to demonstrate the Page Rank algorithm, designed with Tailwind CSS, offering an animated visualization of semantic graphs with Nodes and Edges to demonstrate page rank.",
 			logos: [
 				{
 					image: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/512px-React-icon.svg.png",
