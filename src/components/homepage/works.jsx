@@ -54,10 +54,9 @@ const Works = () => {
 
 						<div className="work">
 							<img
-								src="https://codeazatechnologies.com/assets/final-logo-v1.png"
+								src="./codeaza.png"
 								alt="Codeaza Technologies"
 								className="work-image"
-								style={{ backgroundColor: "black" }}
 							/>
 							<div className="work-details">
 								<div className="work-title">

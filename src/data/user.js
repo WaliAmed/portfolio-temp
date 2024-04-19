@@ -33,6 +33,31 @@ const INFO = {
 
 	projects: [
 		{
+			title: "Food Delivery App",
+			description:
+				"Food Delivery App is a food delivery app designed for a single business, providing a seamless experience for customers to order their favorite meals and have them delivered right to their doorstep. Built with React Native and Expo, this app is tailored to enhance the customer experience by offering a user-friendly interface, real-time order tracking, and efficient delivery management.",
+			logos: [
+				{
+					image: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/512px-React-icon.svg.png",
+					title: "React",
+				},
+
+				{
+					image: "https://play-lh.googleusercontent.com/qE5usAL3g-iQtY20QtD3zQpOunMZxWciox78iwKSDwKi_6dX6fUK6iU1--xeaUwuhw",
+					title: "React Native Paper",
+					customWidth: "50px"
+
+				},
+				{
+					image: "https://devtop.io/wp-content/uploads/2022/10/react-native-1.png",
+					title: "React Native",
+					customWidth: "50px"
+				},
+			],
+			linkText: "View Project",
+			link: "https://github.com/WaliAmed/food-delivery-app",
+		},
+		{
 			title: "Semantic Graph - PageRank Demonstration",
 			description:
 				"A React JS and React-d3 semantic graph representation web app to demonstrate the Page Rank algorithm, designed with Tailwind CSS, offering an animated visualization of semantic graphs with Nodes and Edges to demonstrate page rank.",

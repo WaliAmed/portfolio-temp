@@ -14,24 +14,21 @@ const Project = (props) => {
 				<div className="project-container">
 					<div className="logo-container">
 						{logos.map((logo, index) => (
-							<>
-								<div key={logo.title} className="project-logo">
+							<React.Fragment key={index}>
+								<div className="project-logo">
 									<img
-										style={{
-											width: "30px",
-											cursor: "help",
-										}}
+										className="logo-image"
 										src={logo.image}
-										alt="logo"
+										alt={logo.title}
 										title={logo.title}
+										style={{ width: logo.customWidth || "30px" }}
 									/>
 								</div>
-								{index !== logos.length - 1 && (
-									<div style={{ fontWeight: "bold" }}>+</div>
-								)}
-							</>
+								{index !== logos.length - 1 && <span className="logo-separator">+</span>}
+							</React.Fragment>
 						))}
 					</div>
+
 
 					<div className="project-title">{title}</div>
 					<div title={description} className="project-description">
