@@ -9,23 +9,28 @@ const Skills = () => {
 		{ name: "Next Js", level: 90 },
 		{ name: "JavaScript", level: 90 },
 		{ name: "Redux", level: 90 },
+		{ name: "React Native", level: 87 },
 		{ name: "Tailwind Css", level: 85 },
-		{ name: "HTML/CSS", level: 85 },
+		{ name: "Vue Js", level: 80 },
 		{ name: "Typescript", level: 50 },
+		{ name: "HTML/CSS", level: 85 },
 	];
 
 	const backend = [
-		{ name: "Node Js", level: 75 },
-		{ name: "Express Js", level: 75 },
+		{ name: "Node Js", level: 85 },
+		{ name: "Express Js", level: 85 },
 		{ name: "Rest API", level: 85 },
-		{ name: "MongoDB", level: 65 },
-		{ name: "MySQL", level: 50 },
-		{ name: "Sequelize", level: 50 },
+		{ name: "MySQL", level: 80 },
+		{ name: "Postgres", level: 80 },
+		{ name: "MongoDB", level: 50 },
+		{ name: "Prisma", level: 75 },
+		{ name: "Sequelize", level: 75 },
 	];
 
 	const serverless = [
 		{ name: "S3", level: 50 },
 		{ name: "Firebase", level: 50 },
+		{ name: "Docker", level: 40 },
 	];
 
 	const tools = [
