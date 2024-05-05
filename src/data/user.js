@@ -161,12 +161,14 @@ const INFO = {
 				"A multi-role dashboard developed with Vue JS and CSS3, designed to enhance engagement in crypto gaming while streamlining data and payment interactions for users and brands.",
 			logos: [
 				{
-					image: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3AVue.png&psig=AOvVaw2YntfxzHYX0Sal1qgFC33j&ust=1714898335766000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCIj_34zM84UDFQAAAAAdAAAAABAE",
+					image: "/icons/vuejs.png",
 					title: "Vue JS",
+					customWidth: "60px"
 				},
 				{
-					image: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fbrandslogos.com%2Fc%2Fcss-logo%2F&psig=AOvVaw0SZvNQfzUMcLb2xxt_UOZN&ust=1714974267352000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCPDmvv3m9YUDFQAAAAAdAAAAABAE",
+					image: "/icons/css.png",
 					title: "CSS3",
+					customWidth: "35px"
 				},
 			],
 			linkText: "View Project",
