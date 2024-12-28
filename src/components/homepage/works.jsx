@@ -15,10 +15,14 @@ const Works = () => {
 					<div className="works-body">
 						<div className="work">
 							<img
-								src="https://pbs.twimg.com/media/DGnFeHvVoAAjsnI.jpg"
-								alt="Numu"
+								src="https://media.licdn.com/dms/image/v2/D4D0BAQEsqEfDwiOCcQ/company-logo_200_200/company-logo_200_200/0/1716398577134/web_tronix_logo?e=1743638400&v=beta&t=99n_mI4aoMa0nkHnNvwsplDOCySH1tJCg-ZZNQmTwH0"
+								alt="Web-tronix"
 								className="work-image"
-								style={{ height: "40px", padding: "0px" }}
+								style={{
+									height: "32px",
+									width: "32px",
+									background: "transparent",
+								}}
 							/>
 							<div className="work-details">
 								<div className="work-title">Numu</div>
@@ -27,7 +31,31 @@ const Works = () => {
 										Full-stack Web Developer
 									</div>
 									<div className="work-duration">
-										05/2023 - Present
+										08/2023 - Present
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div className="work">
+							<img
+								src="https://luagroup.com/wp-content/uploads/2024/08/lua-logo.svg"
+								alt="Lua (Numu)"
+								className="work-image"
+								style={{
+									height: "32px",
+									width: "32px",
+									background: "transparent",
+								}}
+							/>
+							<div className="work-details">
+								<div className="work-title">Numu</div>
+								<div className="work-date">
+									<div className="work-subtitle">
+										Full-stack Web Developer
+									</div>
+									<div className="work-duration">
+										05/2023 - 07/2024
 									</div>
 								</div>
 							</div>

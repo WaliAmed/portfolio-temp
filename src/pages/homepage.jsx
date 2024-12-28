@@ -69,7 +69,7 @@ const Homepage = () => {
 
 	const redirectToGoogleDrive = () => {
 		window.open(
-			"https://drive.google.com/file/d/1BwUe9qFbrMjGUkhc-wQoIAz63vSmEXDx/view?usp=sharing"
+			"https://drive.google.com/file/d/19dy3rchBTPdzp-7Ax-bkdoska7z0ybpq/view?usp=sharing"
 		);
 	};
 

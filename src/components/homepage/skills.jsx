@@ -19,7 +19,7 @@ const Skills = () => {
 	const backend = [
 		{ name: "Node Js", level: 85 },
 		{ name: "Express Js", level: 85 },
-		{ name: "Rest API", level: 85 },
+		{ name: "Laravel", level: 85 },
 		{ name: "MySQL", level: 80 },
 		{ name: "Postgres", level: 80 },
 		{ name: "MongoDB", level: 50 },
