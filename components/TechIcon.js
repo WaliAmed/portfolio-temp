@@ -1,52 +1,55 @@
-import {
-  Code,
-  Database,
-  Globe,
-  Smartphone,
-  Server,
-  Cloud,
-  Palette,
-  Zap,
-  FileCode,
-  Layers,
-  Settings,
-  GitBranch,
-} from "lucide-react"
-
 const techIcons = {
-  "React JS": { icon: Code, color: "text-cyan-400" },
-  "Next JS": { icon: Layers, color: "text-gray-300" },
-  "Node.js": { icon: Server, color: "text-green-400" },
-  Laravel: { icon: Globe, color: "text-red-400" },
-  JavaScript: { icon: FileCode, color: "text-yellow-400" },
-  TypeScript: { icon: FileCode, color: "text-blue-400" },
-  PHP: { icon: Code, color: "text-purple-400" },
-  MySQL: { icon: Database, color: "text-orange-400" },
-  MongoDB: { icon: Database, color: "text-green-500" },
-  PostgreSQL: { icon: Database, color: "text-blue-500" },
-  AWS: { icon: Cloud, color: "text-orange-300" },
-  Docker: { icon: Settings, color: "text-blue-400" },
-  "Tailwind CSS": { icon: Palette, color: "text-teal-400" },
-  CSS3: { icon: Palette, color: "text-blue-400" },
-  HTML5: { icon: Globe, color: "text-orange-400" },
-  "Vue.js": { icon: Zap, color: "text-green-400" },
-  "Socket.io": { icon: Zap, color: "text-gray-300" },
-  Redis: { icon: Database, color: "text-red-400" },
-  Stripe: { icon: Settings, color: "text-purple-400" },
-  Vercel: { icon: Cloud, color: "text-gray-300" },
-  "GitHub CI/CD": { icon: GitBranch, color: "text-gray-300" },
-  Sass: { icon: Palette, color: "text-pink-400" },
-  Webpack: { icon: Settings, color: "text-blue-400" },
-  jQuery: { icon: Code, color: "text-blue-300" },
-  WordPress: { icon: Globe, color: "text-blue-400" },
-  "Video.js": { icon: Smartphone, color: "text-red-400" },
-  "Google Maps API": { icon: Globe, color: "text-green-400" },
-  "AWS S3": { icon: Cloud, color: "text-orange-300" },
-}
+  "React JS": { src: "/icons/react.svg", color: "#61DAFB" },
+  "Next JS": { src: "/icons/nextdotjs.svg", color: "#000000" },
+  "Vue.js": { src: "/icons/vuedotjs.svg", color: "#42B883" },
+  jQuery: { src: "/icons/jquery.svg", color: "#0769AD" },
+  "Node.js": { src: "/icons/nodedotjs.svg", color: "#339933" },
+  Laravel: { src: "/icons/laravel.svg", color: "#FF2D20" },
+  "Nest Js": { src: "/icons/nestjs.svg", color: "#E0234E" },
+  JavaScript: { src: "/icons/javascript.svg", color: "#F7DF1E" },
+  TypeScript: { src: "/icons/typescript.svg", color: "#3178C6" },
+  PHP: { src: "/icons/php.svg", color: "#777BB4" },
+  "Tailwind CSS": { src: "/icons/tailwindcss.svg", color: "#06B6D4" },
+  "Shad CN": { src: "/icons/shadcnui.svg", color: "#6366F1" },
+  "Ant Design": { src: "/icons/antdesign.svg", color: "#1677FF" },
+  CSS3: { src: "/icons/css.svg", color: "#1572B6" },
+  HTML5: { src: "/icons/html5.svg", color: "#E34F26" },
+  Sass: { src: "/icons/sass.svg", color: "#CC6699" },
+  MySQL: { src: "/icons/mysql.svg", color: "#00758F" },
+  MongoDB: { src: "/icons/mongodb.svg", color: "#47A248" },
+  PostgreSQL: { src: "/icons/postgresql.svg", color: "#336791" },
+  Redis: { src: "/icons/redis.svg", color: "#DC382D" },
+  "Neon Postgres": { src: "/icons/neon-postgres.svg", color: "#04D9FF" },
+  "VPS servers": { src: "/placeholder-logo.png", color: "#4B5563" },
+  AWS: { src: "/icons/aws.svg", color: "#FF9900" },
+  "AWS S3": { src: "/icons/aws.svg", color: "#569A31" },
+  Docker: { src: "/icons/docker.svg", color: "#2496ED" },
+  "GitHub CI/CD": { src: "/icons/github.svg", color: "#181717" },
+  Deployments: { src: "/placeholder-logo.png", color: "#10B981" },
+  Vercel: { src: "/icons/vercel.svg", color: "#000000" },
+  Git: { src: "/icons/git.svg", color: "#F05032" },
+  Clerk: { src: "/icons/clerk.svg", color: "#6C47FF" },
+  "Socket.io": { src: "/icons/socketdotio.svg", color: "#010101" },
+  Stripe: { src: "/icons/stripe.svg", color: "#635BFF" },
+  "Google Maps API": { src: "/icons/googlemaps.svg", color: "#4285F4" },
+  "Chart Js": { src: "/icons/chartdotjs.svg", color: "#FF6384" },
+  "Dnd Kit": { src: "/icons/dnd.svg", color: "#FF4785" },
+};
 
-export default function TechIcon({ tech, className = "h-4 w-4" }) {
-  const techInfo = techIcons[tech] || { icon: Code, color: "text-gray-400" }
-  const IconComponent = techInfo.icon
+export default function TechIcon({ tech, className = "h-6 w-6" }) {
+  const techInfo = techIcons[tech] || {
+    src: "/placeholder-logo.png",
+    color: "#9CA3AF",
+  };
 
-  return <IconComponent className={`${className} ${techInfo.color}`} />
+  return (
+    <div className="inline-flex items-center justify-center" title={tech}>
+      <img
+        src={techInfo.src}
+        alt={tech}
+        className={className}
+        style={{ color: techInfo.color, fill: techInfo.color }}
+      />
+    </div>
+  );
 }

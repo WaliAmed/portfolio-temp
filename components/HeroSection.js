@@ -1,7 +1,7 @@
-import { Button } from "@/components/ui/button"
-import { ArrowRight, Download } from "lucide-react"
-import Link from "next/link"
-import Image from "next/image"
+import { Button } from "@/components/ui/button";
+import { ArrowRight, Download } from "lucide-react";
+import Link from "next/link";
+import Image from "next/image";
 
 export default function HeroSection() {
   return (
@@ -11,14 +11,17 @@ export default function HeroSection() {
           {/* Text Section - Clean without background graphics */}
           <div className="lg:pr-8 lg:pt-4">
             <div className="lg:max-w-lg">
-              <h2 className="text-base font-semibold leading-7 text-primary">Senior Software Developer</h2>
+              <h2 className="text-base font-semibold leading-7 text-primary">
+                Senior Software Developer
+              </h2>
               <p className="mt-2 text-3xl font-bold tracking-tight sm:text-4xl">
                 Hi, I'm <span className="text-primary">Wali Ahmed</span>
               </p>
               <p className="mt-6 text-lg leading-8 text-muted-foreground">
-                I transform business ideas into powerful digital solutions. Specializing in building custom software
-                that drives growth, streamlines operations, and delivers exceptional user experiences for businesses of
-                all sizes.
+                I transform business ideas into powerful digital solutions.
+                Specializing in building custom software that drives growth,
+                streamlines operations, and delivers exceptional user
+                experiences for businesses of all sizes.
               </p>
               <div className="mt-10 flex items-center gap-x-6">
                 <Link href="/projects">
@@ -27,13 +30,21 @@ export default function HeroSection() {
                     <ArrowRight className="h-4 w-4" />
                   </Button>
                 </Link>
-                <Button
-                  variant="outline"
-                  className="border-primary text-primary hover:bg-primary hover:text-primary-foreground flex items-center gap-2 bg-transparent"
+                <Link
+                  href={
+                    "https://drive.google.com/file/d/19dy3rchBTPdzp-7Ax-bkdoska7z0ybpq/view?usp=sharing"
+                  }
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  <Download className="h-4 w-4" />
-                  Download CV
-                </Button>
+                  <Button
+                    variant="outline"
+                    className="border-primary text-primary hover:bg-primary hover:text-primary-foreground"
+                  >
+                    <Download className="h-4 w-4" />
+                    Download CV
+                  </Button>
+                </Link>
               </div>
             </div>
           </div>
@@ -61,7 +72,10 @@ export default function HeroSection() {
               <div className="absolute inset-0 opacity-5">
                 <div className="grid grid-cols-8 grid-rows-8 w-full h-full gap-4">
                   {Array.from({ length: 64 }).map((_, i) => (
-                    <div key={i} className="w-1 h-1 bg-primary rounded-full"></div>
+                    <div
+                      key={i}
+                      className="w-1 h-1 bg-primary rounded-full"
+                    ></div>
                   ))}
                 </div>
               </div>
@@ -76,7 +90,7 @@ export default function HeroSection() {
                 {/* Image container */}
                 <div className="relative bg-gradient-to-br from-card to-muted p-2 rounded-3xl shadow-2xl">
                   <Image
-                    src="/placeholder.svg?height=350&width=350"
+                    src="/my-dp-cropped-smaller.png?height=350&width=350"
                     alt="Wali Ahmed"
                     width={350}
                     height={350}
@@ -92,5 +106,5 @@ export default function HeroSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }
