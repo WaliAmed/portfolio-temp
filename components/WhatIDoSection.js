@@ -1,5 +1,5 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Code, Database, Globe, Smartphone } from "lucide-react"
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Code, Database, Smartphone, Server } from "lucide-react";
 
 const services = [
   {
@@ -19,29 +19,34 @@ const services = [
     bgColor: "bg-green-400/10",
   },
   {
-    title: "Full-Stack Solutions",
-    description: "End-to-end web application development from concept to deployment, ensuring seamless integration.",
-    icon: Globe,
-    color: "text-gray-400",
-    bgColor: "bg-gray-400/10",
+    title: "DevOps & Cloud Services",
+    description:
+      "Streamlining CI/CD pipelines with Git and GitHub Actions, deploying applications on VPS servers, and leveraging AWS and AWS S3 for scalable cloud solutions.",
+    icon: Server,
+    color: "text-yellow-400",
+    bgColor: "bg-yellow-400/10",
   },
   {
     title: "Mobile-First Design",
-    description: "Developing mobile-responsive applications that work perfectly across all devices and screen sizes.",
+    description:
+      "Developing mobile-responsive applications that work perfectly across all devices and screen sizes.",
     icon: Smartphone,
     color: "text-purple-400",
     bgColor: "bg-purple-400/10",
   },
-]
+];
 
 export default function WhatIDoSection() {
   return (
     <section className="py-24 sm:py-32 bg-muted/50">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
-          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">What I Do</h2>
+          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
+            What I Do
+          </h2>
           <p className="mt-4 text-lg leading-8 text-muted-foreground">
-            I provide comprehensive web development services to bring your ideas to life
+            I provide comprehensive web development services to bring your ideas
+            to life
           </p>
         </div>
         <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-8 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
@@ -63,5 +68,5 @@ export default function WhatIDoSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }

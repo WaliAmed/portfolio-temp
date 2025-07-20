@@ -103,3 +103,13 @@ html {
   animation: float 6s ease-in-out infinite;
   animation-delay: 2s;
 }
+
+.article-content h1 {
+  @apply text-2xl font-bold mt-10 mb-5;
+}
+.article-content h2 {
+  @apply text-xl font-semibold mt-8 mb-4;
+}
+.article-content h3 {
+  @apply text-lg font-semibold mt-6 mb-3;
+}
