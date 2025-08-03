@@ -39,6 +39,7 @@ const projects = [
     featured: true,
     images: [
       "/needle/needle3.png",
+      "/needle/needle8.png",
       "/needle/needle2.png",
       "/needle/needle4.png",
       "/needle/needle5.png",
