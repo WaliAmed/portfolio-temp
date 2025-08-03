@@ -25,7 +25,7 @@ const personalInfo = {
   email: "waliamedvd@gmail.com",
   phone: "+92 315 6840837",
   location: "Islamabad, Pakistan",
-  website: "https://wali-dev.vercel.app/",
+  website: "https://wali-www.vercel.app/",
 };
 
 const summary =

@@ -35,7 +35,7 @@ const projects = [
       "Chart Js",
     ],
     date: "2025",
-    demoLink: "https://dev.needlematch.com/",
+    demoLink: "https://www.needlematch.com/",
     featured: true,
     images: [
       "/needle/needle3.png",
@@ -66,7 +66,7 @@ const projects = [
       "Stripe",
     ],
     date: "2025",
-    demoLink: "https://dev.vogoglobal.com/",
+    demoLink: "https://www.vogoglobal.com/",
     featured: true,
     images: [
       "/vogo/vogo1.png",
