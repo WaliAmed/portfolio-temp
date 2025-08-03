@@ -1,6 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import Image from "next/image";
+import TechIcon from "@/components/TechIcon";
 
 const skillCategories = [
   {
@@ -117,7 +118,7 @@ export default function About() {
                 {skillCategories.map((category) => (
                   <Card key={category.title} className="bg-card">
                     <CardHeader>
-                      <CardTitle className="text-lg font-semibold">
+                      <CardTitle className="text-xl">
                         {category.title}
                       </CardTitle>
                     </CardHeader>
@@ -127,8 +128,9 @@ export default function About() {
                           <Badge
                             key={skill}
                             variant="secondary"
-                            className="px-2 py-1"
+                            className="text-sm flex items-center gap-1.5 bg-muted/50 p-2"
                           >
+                            <TechIcon tech={skill} className="h-3 w-3" />
                             {skill}
                           </Badge>
                         ))}
