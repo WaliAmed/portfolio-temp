@@ -1,4 +1,4 @@
-import Link from "next/link"
+import Link from "next/link";
 
 const navigation = [
   { name: "About", href: "/about" },
@@ -7,7 +7,7 @@ const navigation = [
   { name: "Experience", href: "/experience" },
   { name: "Articles", href: "/articles" },
   { name: "Contact", href: "/contact" },
-]
+];
 
 export default function Footer() {
   return (
@@ -15,7 +15,12 @@ export default function Footer() {
       <div className="mx-auto max-w-7xl px-6 py-12 lg:px-8">
         <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
           <div className="flex items-center gap-8">
-            <span className="text-sm text-muted-foreground">© 2024 Wali Ahmed. All rights reserved.</span>
+            <a
+              href="mailto:waliamedvd@gmail.com"
+              className="text-sm text-muted-foreground"
+            >
+              waliamedvd@gmail.com
+            </a>
           </div>
           <nav className="flex gap-6">
             {navigation.map((item) => (
@@ -31,5 +36,5 @@ export default function Footer() {
         </div>
       </div>
     </footer>
-  )
+  );
 }
